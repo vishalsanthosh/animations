@@ -13,7 +13,9 @@ class _TweenAnimationState extends State<TweenAnimation>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("TWEEN"),),
+      appBar: AppBar(title: Text("TWEEN ANIMATION"),
+      centerTitle: true,
+      ),
       body: Center(
         child: TweenAnimationBuilder(tween: Tween<double>(
           begin: 100,
@@ -23,10 +25,11 @@ class _TweenAnimationState extends State<TweenAnimation>
            width: size,
            height: size,
            color: Colors.green,
-           child: Center(child: Text("TWEEN")),
+           child: child,
         
           );
         },
+        child: Center(child: Text("TWEEN")),
         
         ),
         
